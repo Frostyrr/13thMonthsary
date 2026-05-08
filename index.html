@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>This Is Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Music toggle -->
+<button id="music-btn" aria-label="Toggle music">
+  <span class="icon">♪</span>
+  <span id="music-label">play music</span>
+</button>
+
+<!-- Hidden audio (royalty-free lo-fi via public domain tone generation) -->
+<audio id="bg-audio" loop>
+  <!-- Replace src with your own audio file link -->
+  <source src="Your Love - Juris Fernandez.mp3" type="audio/mp3">
+</audio>
+
+<!-- ── LANDING ── -->
+<section id="landing">
+
+  <!-- Floating petals (JS will add more) -->
+  <div class="petal" style="left:15%;width:8px;height:8px;animation-duration:14s;animation-delay:0s;"></div>
+  <div class="petal" style="left:70%;width:6px;height:6px;animation-duration:18s;animation-delay:3s;"></div>
+  <div class="petal" style="left:40%;width:10px;height:10px;animation-duration:22s;animation-delay:6s;"></div>
+
+  <div class="landing-inner">
+    <p class="landing-eyebrow">a little something for you</p>
+    <h1 class="landing-title">Happy monthsary, <br><em>baby!</em></h1>
+    <p class="landing-sub">scroll slowly &nbsp;·&nbsp; take your time</p>
+  </div>
+
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── TIMELINE ── -->
+<section id="timeline">
+
+  <!-- Entry 1 -->
+  <article class="timeline-entry from-left">
+    <div class="timeline-img-wrap">
+      <div class="photo-placeholder" style="--grad: linear-gradient(135deg,#ffeef3,#ffd6e0);">
+        <span class="ph-shape" style="width:140px;height:140px;background:#ffc2d1;top:-30px;right:-20px;"></span>
+        <span class="ph-shape" style="width:80px;height:80px;background:#ffb3c6;bottom:-10px;left:10px;"></span>
+        <p class="ph-text"><img src="1.png"></p>
+      </div>
+    </div>
+    <div class="timeline-dot"></div>
+    <div class="timeline-caption-wrap">
+      <span class="caption-date">Our first official date</span>
+      <p class="caption-text">I thought I had it planned out…
+    but it didn't turn out the way I expected.
+    you stayed patient—and somehow, we found a place that felt right.
+
+    </p>
+      <p class="caption-note">I took this photo kay gwapa kaayo ka nag take ug photos sa sunset.</p>
+    </div>
+  </article>
+
+  <!-- Entry 2 -->
+  <article class="timeline-entry from-right">
+    <div class="timeline-caption-wrap">
+      <span class="caption-date">Celebrating your birthday together</span>
+      <p class="caption-text">
+        This was the first time I ever surprised someone… and it was you, babyy
+        Nakulbaan raba ko ani kay basin makit-an nimo ang cake HAHAHAHAHAHAHA
+    </p>
+      <p class="caption-note">I love youu</p>
+    </div>
+    <div class="timeline-dot"></div>
+    <div class="timeline-img-wrap">
+      <div class="photo-placeholder" style="--grad: linear-gradient(135deg,#fff0f4,#ffeef3);">
+        <span class="ph-shape" style="width:100px;height:100px;background:#ffd6e0;top:10px;left:-20px;"></span>
+        <span class="ph-shape" style="width:60px;height:60px;background:#ffc2d1;bottom:10px;right:0px;"></span>
+        <p class="ph-text"><img src="3.jpg"></p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Entry 3 -->
+  <article class="timeline-entry from-left">
+    <div class="timeline-img-wrap">
+      <div class="photo-placeholder" style="--grad: linear-gradient(135deg,#ffd6e0,#ffb3c6);">
+        <span class="ph-shape" style="width:120px;height:120px;background:#ffeef3;bottom:-20px;right:-20px;"></span>
+        <p class="ph-text"><img src="2.png"><br><small style="font-size:11px;opacity:.7;">[ month 3 ]</small></p>
+      </div>
+    </div>
+    <div class="timeline-dot"></div>
+    <div class="timeline-caption-wrap">
+      <span class="caption-date">Celebrating my birthday together</span>
+      <p class="caption-text">
+I never thought I'd get to celebrate my birthday with the love of my life.
+You surprised me with a cake, a flower, and a sweater… and I still remember how it felt that day.</p>
+      <p class="caption-note">Thank youu babyyy</p>
+    </div>
+  </article>
+
+  <!-- Divider -->
+  <div class="divider">
+  </div>
+
+  <!-- Entry 4 -->
+  <article class="timeline-entry from-right">
+    <div class="timeline-caption-wrap">
+      <span class="caption-date">Celebrating the new year's eve together</span>
+      <p class="caption-text">I didn't expect we'd be celebrating New Year's Eve with my family… but we did, and it turned out to be one of the sweetest moments we've shared.
+      </p>
+      <p class="caption-note">If ever ka ma-lonely sa special days, ingna lang ko</p>
+    </div>
+    <div class="timeline-dot"></div>
+    <div class="timeline-img-wrap">
+      <div class="photo-placeholder" style="--grad: linear-gradient(135deg,#ffeef3,#ffd6e0);">
+        <span class="ph-shape" style="width:90px;height:90px;background:#ffb3c6;top:20px;right:20px;"></span>
+        <span class="ph-shape" style="width:50px;height:50px;background:#ffc2d1;bottom:20px;left:20px;"></span>
+        <p class="ph-text"><img src="4.png"></p>
+        <p class="ph-text"><img src="5.png"></p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Entry 5 -->
+  <article class="timeline-entry from-left">
+    <div class="timeline-img-wrap">
+      <div class="photo-placeholder" style="--grad: linear-gradient(135deg,#fff0f4,#ffd6e0);">
+        <span class="ph-shape" style="width:160px;height:80px;background:#ffc2d1;top:-10px;left:-30px;border-radius:50%;"></span>
+        <p class="ph-text"><img src="7.png"><br><small style="font-size:11px;opacity:.7;">[ month 5 ]</small></p>
+      </div>
+    </div>
+    <div class="timeline-dot"></div>
+    <div class="timeline-caption-wrap">
+      <span class="caption-date">Valentines Day</span>
+      <p class="caption-text">
+        Ginahan kos imong gihatag nga frame ug letter mwaaa</p>
+      <p class="caption-note">I love you, babyy!</p>
+    </div>
+  </article>
+
+  <!-- Entry 6 -->
+  <article class="timeline-entry from-right">
+    <div class="timeline-caption-wrap">
+      <span class="caption-date">First Anniversary</span>
+      <p class="caption-text">Our first anniversary was simple—just at home nasab—but it felt really warm and special with you.
+You surprised me with a cute plushy and little handwritten letters I didn't expect at all.</p>
+      <p class="caption-note">I still keep that plushy and your little letters… they mean more to me than you probably think mwaa babyy</p>
+    </div>
+    <div class="timeline-dot"></div>
+    <div class="timeline-img-wrap">
+      <div class="photo-placeholder" style="--grad: linear-gradient(135deg,#ffd6e0,#ffc2d1);">
+        <span class="ph-shape" style="width:100px;height:100px;background:#ffeef3;top:-20px;right:10px;"></span>
+        <span class="ph-shape" style="width:70px;height:70px;background:#ffb3c6;bottom:10px;left:-10px;"></span>
+        <p class="ph-text"><img src="8.png"><br><small style="font-size:11px;opacity:.7;">[ month 6 ]</small></p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Entry 7 -->
+  <article class="timeline-entry from-left">
+    <div class="timeline-img-wrap">
+      <div class="photo-placeholder" style="--grad: linear-gradient(135deg,#ffeef3,#ffb3c6);">
+        <span class="ph-shape" style="width:110px;height:110px;background:#ffd6e0;bottom:-20px;right:-10px;"></span>
+        <p class="ph-text"><img src="9.png"><br><small style="font-size:11px;opacity:.7;">[ month 7 ]</small></p>
+      </div>
+    </div>
+    <div class="timeline-dot"></div>
+    <div class="timeline-caption-wrap">
+      <span class="caption-date">First Photobooth date</span>
+      <p class="caption-text">This was our first photobooth date.
+        Gusto jud nako mo try sauna palang, but I never really had the chance before,
+        so I was a bit hesitant at first… but that moment felt really sweet and genuine with you.</p>
+      <p class="caption-note">Pero nasuko jud kas ako kay namalig pindot ang isa ka picture HAHAHAHAHA</p>
+    </div>
+  </article>
+
+  <!-- Entry 8 -->
+  <article class="timeline-entry from-right">
+    <div class="timeline-caption-wrap">
+      <span class="caption-date">Arcade Date</span>
+      <p class="caption-text">Our first ever arcade date, tapos kini moy pinaka-lingaw sa tanan. We went karaoke and played around, nakadungog pajud kas pang-dance kids nako nga tingog HAHAHAHA</p>
+      <p class="caption-note">Labyuuuu</p>
+    </div>
+    <div class="timeline-dot"></div>
+    <div class="timeline-img-wrap">
+      <div class="photo-placeholder" style="--grad: linear-gradient(135deg,#fff0f4,#ffd6e0);">
+        <span class="ph-shape" style="width:90px;height:90px;background:#ffc2d1;top:10px;left:0px;"></span>
+        <span class="ph-shape" style="width:60px;height:60px;background:#ffb3c6;bottom:-10px;right:20px;"></span>
+        <p class="ph-text"><img src="10.png"></p>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+<!-- ── FINAL ── -->
+<section id="final">
+  <div class="final-inner">
+    <p class="final-eyebrow">if you made it this far…</p>
+    <h2 class="final-title">Thank you for being<br><em>exactly you.</em></h2>
+    <p class="final-message">
+    These days haven't been perfect—but they've been ours.  
+    And I wouldn't trade a single ordinary moment with you.
+    <br><br>
+    Every quiet evening, every laugh that came out wrong, every time we figured things out together… it all means more than I can easily put into words.
+    <br><br>
+    You know I'm not really a wordy person, but I made this because I wanted you to feel it.
+    <br><br>
+      Happy monthsary, baby!
+    </p>
+    <p class="final-sig">I love you, baby!</p>
+    <br>
+    <p class="final-eyebrow">- Marc</p>
+    <div class="heart-row">
+      <span>🌸</span><span>🌸</span><span>🌸</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  // ── FLOATING PETALS
+  (function spawnPetals() {
+    const count = 10;
+    for (let i = 0; i < count; i++) {
+      const p = document.createElement('div');
+      p.className = 'petal';
+      const size = 6 + Math.random() * 10;
+      p.style.cssText = `
+        left: ${Math.random() * 100}%;
+        width: ${size}px;
+        height: ${size}px;
+        animation-duration: ${12 + Math.random() * 16}s;
+        animation-delay: ${Math.random() * 10}s;
+        border-radius: ${Math.random() > 0.5 ? '50% 0 50% 0' : '50% 50% 0 50%'};
+        opacity: 0;
+      `;
+      document.getElementById('landing').appendChild(p);
+    }
+  })();
+
+  // ── MUSIC TOGGLE
+  const btn   = document.getElementById('music-btn');
+  const audio = document.getElementById('bg-audio');
+  const label = document.getElementById('music-label');
+  let playing = false;
+
+  btn.addEventListener('click', () => {
+    if (playing) {
+      audio.pause();
+      label.textContent = 'play music';
+      btn.querySelector('.icon').textContent = '♪';
+    } else {
+      audio.volume = 0.25;
+      audio.play().catch(() => {});
+      label.textContent = 'pause music';
+      btn.querySelector('.icon').textContent = '♫';
+    }
+    playing = !playing;
+  });
+
+  // ── SCROLL-TRIGGERED ANIMATIONS
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.timeline-entry, .divider, .final-inner')
+    .forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
